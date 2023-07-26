@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'bg-nav': '#F85559;',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .lato-font {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <!-- navbaer -->
+        <nav class="px-60 py-12 ">
+            <div class="flex items-center justify-center h-24 rounded-full bg-bg-nav">
+                <div class="navbar-start lato-font  lg:flex">
+                    <ul class="menu menu-horizontal px-2 text-white ">
+                        <li><a>Home</a></li>
+                        <li> <a>About Us</a> </li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-center flex items-center gap-1">
+                    <img class="w-12 h-14" src="/images/logo.png" alt="">
+                    <a class="text-5xl font-bold lato-font text-white">Fruit Burst</a>
+                </div>
+
+                <div class="navbar-end ">
+                    <div class="form-control  flex justify-center items-center">
+
+                        <div>
+                            <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
+
 </html>
